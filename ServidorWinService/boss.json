@@ -1,0 +1,16 @@
+{
+	"name": "ServidorLanchonete",
+	"description": "",
+	"version": "1.0.0",
+	"homepage": "",
+	"mainsrc": "./",
+	"projects": [],
+	"dependencies": {
+		"github.com/HashLoad/handle-exception": "^0.1.4",
+		"github.com/HashLoad/horse": "^v2.0.6",
+		"github.com/HashLoad/horse-cors": "^1.0.2",
+		"github.com/HashLoad/jhonson": "^1.0.7",
+		"github.com/cachopaweb/factory-connections": "^1.0.1",
+		"github.com/viniciussanchez/dataset-serialize": "^v2.2.1"
+	}
+}
