@@ -13,19 +13,19 @@ uses
   Horse.Logger,
   Horse.Logger.Provider.Console,
   Horse.ServerStatic,
-  UnitConstants in '..\..\..\FormsComuns\Classes\FuncoesComuns\UnitConstants.pas',
-  UnitFuncoesComuns in '..\..\..\FormsComuns\Classes\FuncoesComuns\UnitFuncoesComuns.pas',
-  UnitUtils in '..\..\..\FormsComuns\Classes\FuncoesComuns\UnitUtils.pas',
   UnitComanda.Model in '..\Shared\Model\UnitComanda.Model.pas',
   UnitComplemento.Model in '..\Shared\Model\UnitComplemento.Model.pas',
-  UnitDatabase in '..\..\..\FormsComuns\Classes\FuncoesComuns\Database\UnitDatabase.pas',
   Comandas.Controller in '..\Shared\Controllers\Comandas.Controller.pas',
   Complementos.Controller in '..\Shared\Controllers\Complementos.Controller.pas',
-  UnitLogin.Controller in '..\..\..\FormsComuns\Classes\FuncoesComuns\UnitLogin.Controller.pas',
   Mesas.Controller in '..\Shared\Controllers\Mesas.Controller.pas',
   Produtos.Controller in '..\Shared\Controllers\Produtos.Controller.pas',
-  UnitFuncoesComuns.Controller in '..\..\..\FormsComuns\Classes\FuncoesComuns\UnitFuncoesComuns.Controller.pas',
-  UnitFunctions in '..\..\..\FormsComuns\Classes\FuncoesComuns\UnitFunctions.pas';
+  UnitDatabase in '..\..\..\FormsComuns\Classes\ServidoresUtils\Database\UnitDatabase.pas',
+  UnitConstants in '..\..\..\FormsComuns\Classes\ServidoresUtils\Utils\UnitConstants.pas',
+  UnitDataset.Controller in '..\..\..\FormsComuns\Classes\ServidoresUtils\Utils\UnitDataset.Controller.pas',
+  UnitFuncoesComuns.Controller in '..\..\..\FormsComuns\Classes\ServidoresUtils\Utils\UnitFuncoesComuns.Controller.pas',
+  UnitFuncoesComuns in '..\..\..\FormsComuns\Classes\ServidoresUtils\Utils\UnitFuncoesComuns.pas',
+  UnitFunctions in '..\..\..\FormsComuns\Classes\ServidoresUtils\Utils\UnitFunctions.pas',
+  UnitLogin.Controller in '..\..\..\FormsComuns\Classes\ServidoresUtils\Utils\UnitLogin.Controller.pas';
 
 var
   LLogFileConfig: THorseLoggerConsoleConfig;
@@ -44,7 +44,7 @@ begin
       THorse.Use(ServerStatic('site'));
 
       //Controllers
-      TLoginController.Registrar;
+      TLoginController.Router;
       TMesasController.Registrar;
       TComandasController.Registrar;
       TProdutosController.Registrar;
@@ -53,9 +53,9 @@ begin
 
       //start server
       THorse.Listen(9000,
-      procedure (App: THorse)
+      procedure
       begin
-        Writeln('Servidor rodando na porta', ': ', App.Port.ToString);
+        Writeln('Servidor rodando na porta', ': ', THorse.Port.ToString);
         Readln;
       end);
     except

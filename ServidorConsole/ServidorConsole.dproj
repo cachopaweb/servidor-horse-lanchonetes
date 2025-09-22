@@ -50,7 +50,7 @@
         <DCC_UsePackage>RESTComponents;emsclientfiredac;DataSnapFireDAC;FireDACIBDriver;emsclient;FireDACCommon;RESTBackendComponents;soapserver;CloudService;FireDACCommonDriver;inet;FireDAC;FireDACSqliteDriver;soaprtl;soapmidas;$(DCC_UsePackage)</DCC_UsePackage>
         <DCC_Namespace>System;Xml;Data;Datasnap;Web;Soap;Vcl;Vcl.Imaging;Vcl.Touch;Vcl.Samples;Vcl.Shell;$(DCC_Namespace)</DCC_Namespace>
         <SanitizedProjectName>ServidorConsole</SanitizedProjectName>
-        <DCC_UnitSearchPath>modules\.dcp;modules\.dcu;modules;modules\clientrest\src;modules\dataset-serialize\src;modules\factory-connections\src\FireDAC;modules\factory-connections\src\IBExpress;modules\factory-connections\src;modules\handle-exception\src;modules\horse\src;modules\horse-cors\src;modules\horse-logger\src;modules\horse-logger-provider-console\src;modules\horse-server-static\src;modules\horse-utils-clientip\src;modules\jhonson\src;modules\portalorm\src\Model;modules\portalorm\src\Modulos\FormRTTI\Model;modules\portalorm\src\Modulos\FormRTTI;modules\portalorm\src\Modulos\Helpers;modules\portalorm\src\Modulos\InsereTabela;modules\portalorm\src\Modulos\PatternCommand;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
+        <DCC_UnitSearchPath>modules\.dcp;modules\.dcu;modules;modules\clientrest\src;modules\dataset-serialize\src;modules\factory-connections\src\FireDAC;modules\factory-connections\src\IBExpress;modules\factory-connections\src;modules\handle-exception\src;modules\horse\src;modules\horse-cors\src;modules\horse-logger\src;modules\horse-logger-provider-console\src;modules\horse-server-static\src;modules\horse-utils-clientip\src;modules\jhonson\src;modules\portalorm\src\Model;modules\portalorm\src\Modulos\FormRTTI\Model;modules\portalorm\src\Modulos\FormRTTI;modules\portalorm\src\Modulos\Helpers;modules\portalorm\src\Modulos\InsereTabela;modules\portalorm\src\Modulos\PatternCommand;modules\portalorm\src\views;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Base_Linux64)'!=''">
         <DCC_UsePackage>FireDACADSDriver;DatasnapConnectorsFreePascal;FireDACMSSQLDriver;inetdb;emsedge;dbexpress;IndyCore;dsnap;DataSnapCommon;DataSnapConnectors;bindengine;FireDACOracleDriver;FireDACMySQLDriver;FireDACCommonODBC;DataSnapClient;IndySystem;FireDACDb2Driver;ACBr_Integrador;FireDACInfxDriver;tscap32;emshosting;FireDACPgDriver;FireDACASADriver;FireDACTDataDriver;DbxCommonDriver;DataSnapServer;xmlrtl;DataSnapNativeClient;rtl;DbxClientDriver;CustomIPTransport;bindcomp;dbxcds;FireDACODBCDriver;DataSnapIndy10ServerTransport;dsnapxml;dbrtl;FireDACMongoDBDriver;IndyProtocols;$(DCC_UsePackage)</DCC_UsePackage>
@@ -89,19 +89,19 @@
         <DelphiCompile Include="$(MainSource)">
             <MainSource>MainSource</MainSource>
         </DelphiCompile>
-        <DCCReference Include="..\..\..\FormsComuns\Classes\FuncoesComuns\UnitConstants.pas"/>
-        <DCCReference Include="..\..\..\FormsComuns\Classes\FuncoesComuns\UnitFuncoesComuns.pas"/>
-        <DCCReference Include="..\..\..\FormsComuns\Classes\FuncoesComuns\UnitUtils.pas"/>
         <DCCReference Include="..\Shared\Model\UnitComanda.Model.pas"/>
         <DCCReference Include="..\Shared\Model\UnitComplemento.Model.pas"/>
-        <DCCReference Include="..\..\..\FormsComuns\Classes\FuncoesComuns\Database\UnitDatabase.pas"/>
         <DCCReference Include="..\Shared\Controllers\Comandas.Controller.pas"/>
         <DCCReference Include="..\Shared\Controllers\Complementos.Controller.pas"/>
-        <DCCReference Include="..\..\..\FormsComuns\Classes\FuncoesComuns\UnitLogin.Controller.pas"/>
         <DCCReference Include="..\Shared\Controllers\Mesas.Controller.pas"/>
         <DCCReference Include="..\Shared\Controllers\Produtos.Controller.pas"/>
-        <DCCReference Include="..\..\..\FormsComuns\Classes\FuncoesComuns\UnitFuncoesComuns.Controller.pas"/>
-        <DCCReference Include="..\..\..\FormsComuns\Classes\FuncoesComuns\UnitFunctions.pas"/>
+        <DCCReference Include="..\..\..\FormsComuns\Classes\ServidoresUtils\Database\UnitDatabase.pas"/>
+        <DCCReference Include="..\..\..\FormsComuns\Classes\ServidoresUtils\Utils\UnitConstants.pas"/>
+        <DCCReference Include="..\..\..\FormsComuns\Classes\ServidoresUtils\Utils\UnitDataset.Controller.pas"/>
+        <DCCReference Include="..\..\..\FormsComuns\Classes\ServidoresUtils\Utils\UnitFuncoesComuns.Controller.pas"/>
+        <DCCReference Include="..\..\..\FormsComuns\Classes\ServidoresUtils\Utils\UnitFuncoesComuns.pas"/>
+        <DCCReference Include="..\..\..\FormsComuns\Classes\ServidoresUtils\Utils\UnitFunctions.pas"/>
+        <DCCReference Include="..\..\..\FormsComuns\Classes\ServidoresUtils\Utils\UnitLogin.Controller.pas"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>
