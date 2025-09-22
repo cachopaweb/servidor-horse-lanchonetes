@@ -2,7 +2,7 @@
     <PropertyGroup>
         <ProjectGuid>{4C0E72BE-79E2-419C-B04D-270A7D92CCB6}</ProjectGuid>
         <ProjectVersion>18.4</ProjectVersion>
-        <FrameworkType>None</FrameworkType>
+        <FrameworkType>VCL</FrameworkType>
         <MainSource>ServidorConsole.dpr</MainSource>
         <Base>True</Base>
         <Config Condition="'$(Config)'==''">Release</Config>
@@ -20,11 +20,6 @@
     </PropertyGroup>
     <PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Base)'=='true') or '$(Base_Win32)'!=''">
         <Base_Win32>true</Base_Win32>
-        <CfgParent>Base</CfgParent>
-        <Base>true</Base>
-    </PropertyGroup>
-    <PropertyGroup Condition="('$(Platform)'=='Win64' and '$(Base)'=='true') or '$(Base_Win64)'!=''">
-        <Base_Win64>true</Base_Win64>
         <CfgParent>Base</CfgParent>
         <Base>true</Base>
     </PropertyGroup>
@@ -53,9 +48,9 @@
         <DCC_F>false</DCC_F>
         <DCC_K>false</DCC_K>
         <DCC_UsePackage>RESTComponents;emsclientfiredac;DataSnapFireDAC;FireDACIBDriver;emsclient;FireDACCommon;RESTBackendComponents;soapserver;CloudService;FireDACCommonDriver;inet;FireDAC;FireDACSqliteDriver;soaprtl;soapmidas;$(DCC_UsePackage)</DCC_UsePackage>
-        <DCC_Namespace>System;Xml;Data;Datasnap;Web;Soap;$(DCC_Namespace)</DCC_Namespace>
+        <DCC_Namespace>System;Xml;Data;Datasnap;Web;Soap;Vcl;Vcl.Imaging;Vcl.Touch;Vcl.Samples;Vcl.Shell;$(DCC_Namespace)</DCC_Namespace>
         <SanitizedProjectName>ServidorConsole</SanitizedProjectName>
-        <DCC_UnitSearchPath>modules\.dcp;modules\.dcu;modules;modules\dataset-serialize\src;modules\handle-exception\src;modules\horse\src;modules\horse-cors\src;modules\horse-logger\src;modules\horse-logger-provider-console\src;modules\horse-server-static\src;modules\horse-utils-clientip\src;modules\jhonson\src;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
+        <DCC_UnitSearchPath>modules\.dcp;modules\.dcu;modules;modules\clientrest\src;modules\dataset-serialize\src;modules\factory-connections\src\FireDAC;modules\factory-connections\src\IBExpress;modules\factory-connections\src;modules\handle-exception\src;modules\horse\src;modules\horse-cors\src;modules\horse-logger\src;modules\horse-logger-provider-console\src;modules\horse-server-static\src;modules\horse-utils-clientip\src;modules\jhonson\src;modules\portalorm\src\Model;modules\portalorm\src\Modulos\FormRTTI\Model;modules\portalorm\src\Modulos\FormRTTI;modules\portalorm\src\Modulos\Helpers;modules\portalorm\src\Modulos\InsereTabela;modules\portalorm\src\Modulos\PatternCommand;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Base_Linux64)'!=''">
         <DCC_UsePackage>FireDACADSDriver;DatasnapConnectorsFreePascal;FireDACMSSQLDriver;inetdb;emsedge;dbexpress;IndyCore;dsnap;DataSnapCommon;DataSnapConnectors;bindengine;FireDACOracleDriver;FireDACMySQLDriver;FireDACCommonODBC;DataSnapClient;IndySystem;FireDACDb2Driver;ACBr_Integrador;FireDACInfxDriver;tscap32;emshosting;FireDACPgDriver;FireDACASADriver;FireDACTDataDriver;DbxCommonDriver;DataSnapServer;xmlrtl;DataSnapNativeClient;rtl;DbxClientDriver;CustomIPTransport;bindcomp;dbxcds;FireDACODBCDriver;DataSnapIndy10ServerTransport;dsnapxml;dbrtl;FireDACMongoDBDriver;IndyProtocols;$(DCC_UsePackage)</DCC_UsePackage>
@@ -66,12 +61,6 @@
         <BT_BuildType>Debug</BT_BuildType>
         <VerInfo_Keys>CompanyName=;FileDescription=$(MSBuildProjectName);FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProgramID=com.embarcadero.$(MSBuildProjectName);ProductName=$(MSBuildProjectName);ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
         <VerInfo_Locale>1033</VerInfo_Locale>
-        <DCC_ConsoleTarget>true</DCC_ConsoleTarget>
-        <UWP_DelphiLogo44>$(BDS)\bin\Artwork\Windows\UWP\delphi_UwpDefault_44.png</UWP_DelphiLogo44>
-        <UWP_DelphiLogo150>$(BDS)\bin\Artwork\Windows\UWP\delphi_UwpDefault_150.png</UWP_DelphiLogo150>
-    </PropertyGroup>
-    <PropertyGroup Condition="'$(Base_Win64)'!=''">
-        <DCC_UsePackage>DBXSqliteDriver;DBXDb2Driver;DBXInterBaseDriver;vclactnband;vclFireDAC;tethering;FireDACADSDriver;DBXMSSQLDriver;DatasnapConnectorsFreePascal;FireDACMSSQLDriver;vcltouch;vcldb;bindcompfmx;DBXOracleDriver;inetdb;FmxTeeUI;emsedge;fmx;fmxdae;vclib;FireDACDBXDriver;dbexpress;IndyCore;vclx;dsnap;DataSnapCommon;DataSnapConnectors;VCLRESTComponents;QRWRunDXE10_2_w64;vclie;bindengine;DBXMySQLDriver;FireDACOracleDriver;FireDACMySQLDriver;DBXFirebirdDriver;FireDACCommonODBC;DataSnapClient;bindcompdbx;IndyIPCommon;vcl;DBXSybaseASEDriver;IndyIPServer;IndySystem;FireDACDb2Driver;dsnapcon;FireDACMSAccDriver;fmxFireDAC;FireDACInfxDriver;vclimg;TeeDB;emshosting;FireDACPgDriver;ibmonitor;FireDACASADriver;DBXOdbcDriver;FireDACTDataDriver;FMXTee;DbxCommonDriver;ibxpress;Tee;DataSnapServer;xmlrtl;DataSnapNativeClient;fmxobj;vclwinx;ibxbindings;rtl;FireDACDSDriver;DbxClientDriver;DBXSybaseASADriver;CustomIPTransport;vcldsnap;bindcomp;appanalytics;DBXInformixDriver;IndyIPClient;bindcompvcl;TeeUI;dbxcds;VclSmp;adortl;FireDACODBCDriver;DataSnapIndy10ServerTransport;dsnapxml;DataSnapProviderClient;dbrtl;inetdbxpress;FireDACMongoDBDriver;IndyProtocols;fmxase;$(DCC_UsePackage)</DCC_UsePackage>
         <DCC_ConsoleTarget>true</DCC_ConsoleTarget>
         <UWP_DelphiLogo44>$(BDS)\bin\Artwork\Windows\UWP\delphi_UwpDefault_44.png</UWP_DelphiLogo44>
         <UWP_DelphiLogo150>$(BDS)\bin\Artwork\Windows\UWP\delphi_UwpDefault_150.png</UWP_DelphiLogo150>
@@ -100,20 +89,19 @@
         <DelphiCompile Include="$(MainSource)">
             <MainSource>MainSource</MainSource>
         </DelphiCompile>
-        <DCCReference Include="..\Shared\UnitConstants.pas"/>
-        <DCCReference Include="..\Shared\UnitFuncoesComuns.pas"/>
-        <DCCReference Include="..\Shared\UnitUtils.pas"/>
+        <DCCReference Include="..\..\..\FormsComuns\Classes\FuncoesComuns\UnitConstants.pas"/>
+        <DCCReference Include="..\..\..\FormsComuns\Classes\FuncoesComuns\UnitFuncoesComuns.pas"/>
+        <DCCReference Include="..\..\..\FormsComuns\Classes\FuncoesComuns\UnitUtils.pas"/>
         <DCCReference Include="..\Shared\Model\UnitComanda.Model.pas"/>
         <DCCReference Include="..\Shared\Model\UnitComplemento.Model.pas"/>
-        <DCCReference Include="..\Shared\Database\UnitDatabase.pas"/>
+        <DCCReference Include="..\..\..\FormsComuns\Classes\FuncoesComuns\Database\UnitDatabase.pas"/>
         <DCCReference Include="..\Shared\Controllers\Comandas.Controller.pas"/>
         <DCCReference Include="..\Shared\Controllers\Complementos.Controller.pas"/>
-        <DCCReference Include="..\Shared\Controllers\Login.Controller.pas"/>
+        <DCCReference Include="..\..\..\FormsComuns\Classes\FuncoesComuns\UnitLogin.Controller.pas"/>
         <DCCReference Include="..\Shared\Controllers\Mesas.Controller.pas"/>
         <DCCReference Include="..\Shared\Controllers\Produtos.Controller.pas"/>
-        <DCCReference Include="..\Shared\Connection\ServerHorse.Model.Connection.pas"/>
-        <DCCReference Include="..\Shared\Connection\UnitConnection.Model.Interfaces.pas"/>
-        <DCCReference Include="..\Shared\Connection\Query\UnitQuery.FireDAC.Model.pas"/>
+        <DCCReference Include="..\..\..\FormsComuns\Classes\FuncoesComuns\UnitFuncoesComuns.Controller.pas"/>
+        <DCCReference Include="..\..\..\FormsComuns\Classes\FuncoesComuns\UnitFunctions.pas"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>
@@ -591,7 +579,6 @@
             <Platforms>
                 <Platform value="Linux64">False</Platform>
                 <Platform value="Win32">True</Platform>
-                <Platform value="Win64">False</Platform>
             </Platforms>
         </BorlandProject>
         <ProjectFileVersion>12</ProjectFileVersion>

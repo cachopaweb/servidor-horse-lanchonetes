@@ -13,6 +13,7 @@
 		"github.com/cachopaweb/horse-server-static": "^1.0.3",
 		"github.com/hashload/horse-logger": "^2.0.2",
 		"github.com/hashload/horse-logger-provider-console": "^1.0.3",
-		"github.com/viniciussanchez/dataset-serialize": "^v2.2.1"
+		"github.com/viniciussanchez/dataset-serialize": "^v2.2.1",
+		"https://github.com/cachopaweb/portalorm": "^1.0.1"
 	}
 }

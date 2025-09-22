@@ -4,72 +4,96 @@
 	"installedModules": {
 		"github.com/cachopaweb/horse-server-static": {
 			"name": "horse-server-static",
-			"version": "1.0.3",
-			"hash": "aeaafdd66179c95f8a8b103af8005f9e",
+			"version": "1.0.5",
+			"hash": "c68881f2134118a60c5d3c37bdf0a07f",
 			"artifacts": {},
 			"failed": false,
 			"changed": false
 		},
 		"github.com/dliocode/horse-utils-clientip": {
 			"name": "horse-utils-clientip",
-			"version": "0.0.6",
-			"hash": "db4c16721abe55f9f8c42c7990101361",
+			"version": "0.0.8",
+			"hash": "83125fa6038e2377749e27e23b8f3aee",
 			"artifacts": {},
 			"failed": false,
 			"changed": false
 		},
 		"github.com/hashload/handle-exception": {
 			"name": "handle-exception",
-			"version": "0.1.4",
-			"hash": "1152772d75f59dbb562cc7b7711a8ebe",
+			"version": "0.1.7",
+			"hash": "57eb698379cc2d4c24934e43d71779a9",
 			"artifacts": {},
 			"failed": false,
 			"changed": false
 		},
 		"github.com/hashload/horse": {
 			"name": "horse",
-			"version": "v2.0.14",
-			"hash": "ddcf53c9ae2aa918b279edaa5b7cbb83",
+			"version": "3.0.2",
+			"hash": "929cb417c573af469c997a7e1fda5dbb",
 			"artifacts": {},
 			"failed": false,
 			"changed": false
 		},
 		"github.com/hashload/horse-cors": {
 			"name": "horse-cors",
-			"version": "1.0.3",
-			"hash": "248f37dd844f5a4c4ff78364e5a86027",
+			"version": "1.0.5",
+			"hash": "655dbd17159adb9d87d36f3aa56be5a5",
 			"artifacts": {},
 			"failed": false,
 			"changed": false
 		},
 		"github.com/hashload/horse-logger": {
 			"name": "horse-logger",
-			"version": "2.0.2",
-			"hash": "bfb121c6e85b5cfeedbd445c962a3fed",
+			"version": "2.0.6",
+			"hash": "bdf6dfb3913d8fc6f251f40c563446c0",
 			"artifacts": {},
 			"failed": false,
 			"changed": false
 		},
 		"github.com/hashload/horse-logger-provider-console": {
 			"name": "horse-logger-provider-console",
-			"version": "1.0.3",
-			"hash": "59ed31ebb80012c6f8a2d4d45744d1c5",
+			"version": "1.0.5",
+			"hash": "eec5b558d081e06ce3b9d14eb322dd36",
 			"artifacts": {},
 			"failed": false,
 			"changed": false
 		},
 		"github.com/hashload/jhonson": {
 			"name": "jhonson",
-			"version": "1.1.2",
-			"hash": "85d9b3c97b5144448440d7d26bdd16de",
+			"version": "1.1.4",
+			"hash": "7f48e0509b98505a12fa80ee39b53aea",
 			"artifacts": {},
 			"failed": false,
 			"changed": false
 		},
 		"github.com/viniciussanchez/dataset-serialize": {
 			"name": "dataset-serialize",
-			"version": "v2.3.3",
-			"hash": "65a1995f3a283f09382722a7a8c21d1a",
+			"version": "v2.4.8",
+			"hash": "35c05c0196720756923c48da654e4817",
+			"artifacts": {},
+			"failed": false,
+			"changed": false
+		},
+		"https://github.com/cachopaweb/clientrest": {
+			"name": "clientrest",
+			"version": "1.0.3",
+			"hash": "f47c4c669715b2114f20ff0685dc72e9",
+			"artifacts": {},
+			"failed": false,
+			"changed": false
+		},
+		"https://github.com/cachopaweb/factory-connections": {
+			"name": "factory-connections",
+			"version": "v1.0.3",
+			"hash": "dd2506e1ff0fd0b4e07f0347972f12f6",
+			"artifacts": {},
+			"failed": false,
+			"changed": false
+		},
+		"https://github.com/cachopaweb/portalorm": {
+			"name": "portalorm",
+			"version": "v1.0.10",
+			"hash": "22b53df68e0726ee8bb279d1352d300d",
 			"artifacts": {},
 			"failed": false,
 			"changed": false
